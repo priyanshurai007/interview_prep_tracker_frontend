@@ -37,7 +37,7 @@ const App: React.FC = () => {
 
     try {
       const res = await axios.get<Topic[]>(
-        `http://localhost:8080/api/topics/user/${user.uid}`
+        `https://interview-prep-tracker-backend.onrender.com/api/topics/user/${user.uid}`
       );
       setTopics(res.data);
     } catch (err) {

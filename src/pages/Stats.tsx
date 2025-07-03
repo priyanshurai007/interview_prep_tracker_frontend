@@ -57,11 +57,11 @@ useEffect(() => {
   const fetchStats = async () => {
     try {
       const [statusRes, categoryRes, difficultyRes, companyRes, progressRes] = await Promise.all([
-        fetch('http://localhost:8080/api/stats/status'),
-        fetch('http://localhost:8080/api/stats/category'),
-        fetch('http://localhost:8080/api/stats/difficulty'),
-        fetch('http://localhost:8080/api/stats/company'),
-        fetch('http://localhost:8080/api/stats/company-progress'),
+        fetch('https://interview-prep-tracker-backend.onrender.com/api/stats/status'),
+        fetch('https://interview-prep-tracker-backend.onrender.com/api/stats/category'),
+        fetch('https://interview-prep-tracker-backend.onrender.com/api/stats/difficulty'),
+        fetch('https://interview-prep-tracker-backend.onrender.com/api/stats/company'),
+        fetch('https://interview-prep-tracker-backend.onrender.com/api/stats/company-progress'),
       ]);
 
       const progressJson = await progressRes.json();

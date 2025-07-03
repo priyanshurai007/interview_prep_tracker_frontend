@@ -16,7 +16,7 @@ const CompanyQuestions: React.FC = () => {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        const response = await fetch("http://localhost:8080/api/company-questions");
+        const response = await fetch("https://interview-prep-tracker-backend.onrender.com/api/company-questions");
         if (!response.ok) throw new Error("Failed to fetch questions");
         const data = await response.json();
         setQuestions(data);

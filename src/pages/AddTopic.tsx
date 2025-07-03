@@ -3,6 +3,7 @@ import { Topic } from '../types/Topic';
 import './AddTopic.css';
 import { getAuth } from 'firebase/auth'; // ✅ Firebase Auth import
 
+
 interface AddTopicProps {
   onAdd?: () => void;
 }
@@ -52,7 +53,7 @@ const AddTopic: React.FC<AddTopicProps> = ({ onAdd }) => {
     };
 
     try {
-      const response = await fetch('http://localhost:8080/api/topics', {
+      const response = await fetch('https://interview-prep-tracker-backend.onrender.com/api/topics', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

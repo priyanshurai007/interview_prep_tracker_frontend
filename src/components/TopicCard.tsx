@@ -19,7 +19,7 @@ const TopicCard: React.FC<Props> = ({ topic, onUpdate, onDelete }) => {
 
   const updateTopicBackend = async (updatedTopic: Topic) => {
     try {
-      const response = await fetch(`http://localhost:8080/api/topics/${topic.id}`, {
+      const response = await fetch(`https://interview-prep-tracker-backend.onrender.com/api/topics/${topic.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -38,7 +38,7 @@ const TopicCard: React.FC<Props> = ({ topic, onUpdate, onDelete }) => {
 
   const handleDelete = async () => {
     try {
-      const res = await fetch(`http://localhost:8080/api/topics/${topic.id}`, {
+      const res = await fetch(`https://interview-prep-tracker-backend.onrender.com/api/topics/${topic.id}`, {
         method: 'DELETE',
       });
 
