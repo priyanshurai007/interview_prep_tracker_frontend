@@ -48,6 +48,7 @@ You can find these in your Firebase project settings.
 
 npm start
 
+```
 
 ## 🌐 Deployed Version  
 👉 [Live App](https://interview-prep-tracker.onrender.com)
