@@ -125,3 +125,18 @@
 .theme-toggle-btn:hover {
   background-color: #99999933;
 }
+
+/* ✅ Logo + title container */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ✅ Logo image styling */
+.navbar-logo {
+  width: 40px;       /* Adjust size for perfect fit */
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px; /* Optional for rounded corners */
+}
